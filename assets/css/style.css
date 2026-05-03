@@ -1,0 +1,561 @@
+*,
+html,
+body {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --utama: violet;
+    --dua: rgb(255, 221, 32);
+    --tiga: #f6f6f6;
+}
+
+/* navbar start */
+nav {
+    display: flex;
+    background-color: rgba(238, 130, 238, 0.8);
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100px;
+    padding: 1.4rem 7%;
+}
+
+.nvbr-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nvbr-logo .nvbr-logo-img {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.nvbr-logo h2 {
+    font-weight: 600;
+    align-items: center;
+    font-size: 2rem;
+    margin-left: -1rem;
+    color: whitesmoke;
+    margin-left: 0.5rem;
+}
+
+.nvbr-logo h2 span {
+    color: var(--dua);
+}
+
+.nvbr-nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+.nvbr-nav a:hover {
+    color: white;
+    transition: 0.5s;
+    color: var(--dua);
+}
+
+.burger a {
+    color: white;
+    text-decoration: none;
+    display: none;
+
+}
+
+.burger a:hover {
+    color: var(--dua);
+    transition: 0.5s;
+}
+
+/* navbar end */
+
+/* header start */
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../images/bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-color: rgba(4, 4, 4, 0.5);
+    background-blend-mode: overlay;
+
+}
+
+.hero::after {
+    content: '';
+    display: block;
+    width: 100%;
+    position: absolute;
+    height: 20%;
+    bottom: 0;
+    background: linear-gradient(0deg, rgb(255, 255, 255, 1) 8%, rgba(255, 255, 255, 0) 30%);
+}
+
+.hero .hero-konten {
+    padding: 1.4rem 7%;
+    max-width: 60%;
+    color: whitesmoke;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.hero .hero-konten h2 {
+    color: whitesmoke;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.hero .hero-konten h2 span {
+    color: var(--utama);
+}
+
+.hero .hero-konten .hero-extra {
+    background-color: var(--dua);
+    border-radius: 8px;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    font-weight: 500;
+}
+
+.hero .hero-konten .hero-extra:hover {
+    background-color: whitesmoke;
+    transition: 0.5s;
+}
+
+/* header end */
+
+
+/* about start */
+.about {
+    padding: 1.4rem 7%;
+    display: flex;
+}
+
+.about .about-konten {
+    max-width: 50%;
+    text-align: justify;
+    margin-top: 2rem;
+    margin-bottom: 1.7rem;
+}
+
+.about .about-konten h2 {
+    font-weight: 600;
+    color: var(--utama);
+    text-shadow: 1px 1px 2px rgba(1, 1, 3, 0.5);
+}
+
+.about .about-konten p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: 2rem;
+    line-height: 1.5;
+}
+
+.about .about-img {
+    padding: 1.4rem 7%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: auto;
+}
+
+.about .about-img .img-thumbnail {
+    border: none;
+}
+
+/* about end */
+
+/* visi misi start */
+.visiMisi {
+    padding: 1.4rem 7%;
+    background-color: var(--tiga);
+    text-align: center;
+}
+
+.visiMisi .visi {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.visiMisi .visi h2 {
+    font-weight: 600;
+    color: var(--utama);
+    text-shadow: 1px 1px 2px rgba(1, 1, 3, 0.5);
+}
+
+.visiMisi .visi p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+}
+
+.visiMisi .misi {
+    margin-bottom: 2rem;
+}
+
+.visiMisi .misi h2 {
+    font-weight: 600;
+    color: var(--utama);
+    text-shadow: 1px 1px 2px rgba(1, 1, 3, 0.5);
+    margin-bottom: 2rem;
+}
+
+.visiMisi .misi p {
+    text-align: justify;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+/* visi misi end */
+
+/* sambutan start */
+.sambutan {
+    padding: 1.4rem 7%;
+    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.sambutan h2 {
+    font-weight: 600;
+    color: var(--utama);
+    text-shadow: 1px 1px 2px rgba(1, 1, 3, 0.5);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.sambutan .sambutan-konten {
+    max-width: 60%;
+    line-height: 2;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.sambutan .sambutan-img .img-thumbnail {
+    padding: 1.4rem 7%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    display: flex;
+}
+
+.sambutan .sambutan-img h6 {
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 500;
+    justify-content: center;
+    display: flex;
+    text-shadow: 1px 1px 1px rgba(1, 1, 3, 0.5);
+}
+
+/* sambutan end */
+
+/* fasilitas start */
+.fasilitas {
+    padding: 1.4rem 7%;
+    /* margin-top: 5rem; */
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../images/Koinn.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(4, 4, 4, 0.5);
+    background-blend-mode: overlay;
+    justify-content: center;
+    align-items: center;
+}
+
+.fasilitas h2 {
+    color: var(--utama);
+    margin-bottom: 3rem;
+    justify-content: center;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.fasilitas .card .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.fasilitas .row :hover {
+    transform: translateY(-3px);
+}
+
+/* fasilitas end */
+
+/* dosen start */
+.card-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    padding: 35px;
+    border: none;
+}
+
+.card-item:hover {
+    transform: translateY(-5px);
+}
+
+.card-item .user-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid var(--dua);
+    padding: 4px;
+    margin-bottom: 15px;
+}
+
+.card-item .user-name {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+}
+
+/* dosen end */
+
+/* lulusan start */
+.profil {
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.profil h2 {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 5rem;
+    font-size: 1.7rem;
+    padding: 0;
+    margin-bottom: 0;
+    color: var(--dua);
+}
+
+.profil h1 {
+    font-family: 'Poppins', sans-serif;
+    color: violet;
+    margin-bottom: 3rem;
+}
+
+.profil .card {
+    margin-bottom: 3rem;
+}
+
+.profil .card:hover {
+    transform: translateY(-4px);
+}
+
+.profil .card .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* lulusan start */
+
+/* footer start */
+footer {
+    background-color: rgb(255, 186, 255);
+    padding: 1.4rem 7%;
+    margin-top: 10rem;
+}
+
+footer .footer-konten {
+    display: flex;
+    align-items: center;
+    padding: 1.4rem 7%;
+    gap: 50px;
+}
+
+.logo-footer {
+    flex: 1 1 15rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo-footer .footer-img1 {
+    border-radius: 50%;
+    width: 100px;
+    padding: auto;
+    /* margin-left: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-right: 0; */
+}
+
+.logo-footer .footer-img2 {
+    width: 250px;
+}
+
+.footer-kontak {
+    flex: 1 1 35rem;
+    align-items: center;
+    text-align: justify;
+}
+
+.footer-socials h4 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-socials a {
+    color: black;
+    margin: 0 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .credit {
+    font-family: 'poppins', sans-serif;
+    font-size: 0.9rem;
+    padding: 1.4rem 7%;
+    font-weight: 500;
+}
+
+/* footer end */
+
+
+/* media queris */
+
+/* laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 100%;
+    }
+}
+
+
+/* tab */
+@media (max-width: 880px) {
+    html {
+        font-size: 75%;
+    }
+
+    #menu {
+        display: inline-block;
+    }
+
+    nav {
+        max-width: 100%;
+    }
+
+    nav .nvbr-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: var(--utama);
+        width: 30rem;
+        height: 100vh;
+        transition: 0.5s;
+    }
+
+    nav .nvbr-nav.active {
+        right: 0;
+    }
+    
+
+    nav .nvbr-nav a {
+        display: block;
+        margin: 2rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+
+    nav .nvbr-nav a:hover {
+        background-color: whitesmoke;
+        color: black;
+    }
+
+    .about {
+        flex-wrap: wrap;
+    }
+
+    .about .about-konten {
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .about .about-konten h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about .about-img {
+        margin: 0;
+        margin-bottom: 3rem;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        display: flex;
+    }
+
+
+    footer .footer-konten {
+        flex-wrap: wrap;
+    }
+
+    footer .footer-konten .logo-footer {
+        justify-content: center;
+    }
+
+    footer .footer-socials .sosmed, h4, .credit {
+        justify-content: center;
+        display: flex;
+    }
+    
+}
+
+/* mobile */
+@media (max-width: 450px) {
+    html {
+        font-size: 65%;
+    }
+
+    footer .footer-konten .logo-footer {
+        width: 50%;
+    }
+
+     .sambutan {
+        flex-wrap: wrap;
+    }
+
+    .sambutan .sambutan-konten {
+        max-width: 100%;
+    }
+}
